@@ -1,0 +1,209 @@
+/* ===== RESET ===== */
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  max-width: 80%;
+}
+/* ===== MEDIA ===== */
+
+.bg-page {
+  height: 100vh;
+  margin: 0 auto;
+
+  background-image: url(../images/bg-love-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+main h1 {
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+main img {
+  width: 80%;
+  width: 18rem;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  height: 3rem;
+  min-width: 25rem;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  cursor: pointer;
+  border: 0.15rem solid rgb(255, 39, 39);
+}
+
+button:hover {
+  background-color: rgb(255, 39, 39);
+  color: white;
+  transition: 300ms;
+}
+
+span {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* ====== MODAL ====== */
+
+.base-modal {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../images/bg-love-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: none; /* Voltar ao none quando testar */
+  justify-content: center;
+  align-items: center;
+}
+
+.base-modal.ativo {
+  display: flex;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  height: 40%;
+  border-radius: 2rem;
+
+  z-index: 999;
+
+  padding: 0 6rem;
+  background-color: aliceblue;
+}
+
+.exit {
+  margin-bottom: 2rem;
+
+  display: flex;
+  justify-content: end;
+
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content h2 {
+  font-size: 4rem;
+  font-weight: 600;
+
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+/* ===== MEDIA ===== */
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+    /* 15px */
+  }
+
+  .exit {
+    margin-bottom: 2rem;
+
+    display: flex;
+    justify-content: center;
+
+    cursor: pointer;
+  }
+
+  .exit img {
+    width: 2rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  html {
+    font-size: 93.75%;
+    /* 15px */
+  }
+
+  .modal {
+    width: 70%;
+    height: 60%;
+  }
+}
+
+@media (max-width: 970px) {
+  html {
+    font-size: 87.5%;
+    /* 14px */
+  }
+}
+
+@media (max-width: 700px) {
+  :root {
+    font-size: 75%;
+    /* 12px */
+  }
+}
+
+@media (max-width: 590px) {
+  :root {
+    font-size: 62.25%;
+    /* 10px */
+  }
+}
+
+@media (max-width: 425px) {
+  :root {
+    font-size: 50%;
+    /* 10px */
+  }
+}
+
+@media (max-width: 425px) {
+  .content h2 {
+    font-size: 2.7rem;
+    font-weight: 600;
+    line-height: 3.7rem;
+
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  p {
+    margin-top: 0.8rem;
+    font-size: rem;
+  }
+}
