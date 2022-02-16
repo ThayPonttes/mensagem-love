@@ -89,12 +89,12 @@ span {
   justify-content: center;
   flex-direction: column;
   width: 90%;
-  height: 40%;
+
   border-radius: 2rem;
 
   z-index: 999;
 
-  padding: 0 6rem;
+  padding: 6rem 6rem;
   background-color: aliceblue;
 }
 
@@ -157,8 +157,7 @@ span {
   }
 
   .modal {
-    width: 70%;
-    height: 60%;
+    width: 60%;
   }
 }
 
@@ -167,12 +166,20 @@ span {
     font-size: 87.5%;
     /* 14px */
   }
+
+  .content h2 {
+    font-size: 3.5rem;
+  }
 }
 
 @media (max-width: 700px) {
   :root {
     font-size: 75%;
     /* 12px */
+  }
+
+  .content h2 {
+    font-size: 3.5rem;
   }
 }
 
@@ -192,7 +199,48 @@ span {
 
 @media (max-width: 425px) {
   .content h2 {
-    font-size: 2.7rem;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 3.7rem;
+
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  p {
+    margin-top: 0.8rem;
+    font-size: 4rem;
+  }
+
+  main img {
+    width: 55%;
+  }
+  main h1 {
+    font-size: 3rem;
+  }
+
+  main p {
+    font-size: 1.8rem;
+  }
+
+  main button {
+    font-family: "Poppins", sans-serif;
+    height: 5rem;
+    min-width: 35rem;
+    border-radius: 50px;
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    cursor: pointer;
+    border: 0.15rem solid rgb(255, 39, 39);
+  }
+}
+
+@media (max-width: 320px) {
+  .content h2 {
+    font-size: 2rem;
     font-weight: 600;
     line-height: 3.7rem;
 
