@@ -37,9 +37,9 @@ main h1 {
 }
 
 main img {
-  width: 80%;
+  height: 18rem;
   width: 18rem;
-  border-radius: 50px;
+  border-radius: 100%;
 }
 
 button {
